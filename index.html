@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <title>Home</title>
+  </head>
+
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">Study</h2>
+        <div class="toggle"></div>
+        <link rel="stylesheet" href="style.css" />
+      </header>
+      <video src="images/study.mp4" muted loop autoplay></video>
+      <div class="overlay"></div>
+      <div class="text" id="Home">
+        <h2>Challenge Yourself</h2>
+        <h3>Do what you love</h3>
+        <div class="text-3">Hello, I'm <span class="typing"></span></div>
+        <a href="resume.html" target="_blank">Resume</a>
+      </div>
+
+      <div class="text-5">
+        I
+        <span class="typing-2"></span>
+      </div>
+
+      <ul class="social">
+        <li>
+          <a href="#" target="_blank"><img src="images/fb.png" /></a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com/Pradeepsahu__" target="_blank"
+            ><img src="images/tw.png"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/pradeep_s_a_h_u_/" target="_blank"
+            ><img src="images/instagram.png"
+          /></a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="menu">
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="Portfolio.html">Portfolio</a></li>
+        <li><a href="Hopes.html">Vision</a></li>
+        <li><a href="Blogs_and_Stories.html">Blog</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="Travel.html">Travel</a></li>
+        <li><a href="Education and Projects.html">Education and Project</a></li>
+      </ul>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+
+      var typed = new Typed(".typing", {
+        strings: ["Pradeep Sahu.", "18.", "from New Delhi, India"],
+        typeSpeed: 35,
+        backSpeed: 30,
+        loop: true,
+      });
+
+      var typed = new Typed(".typing-2", {
+        strings: [
+          "Researcher.",
+          "Innovator.",
+          "Gamer.",
+          "Developer.",
+          "Traveller.",
+          "Creative Writer.",
+        ],
+        typeSpeed: 35,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
